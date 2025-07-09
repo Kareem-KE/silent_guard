@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:silent_guard/screen/heart_view.dart';
 import 'package:silent_guard/widget/custom_app_bar.dart';
 import 'package:silent_guard/widget/custom_navigation_bar.dart';
 import 'package:silent_guard/widget/home_screen_content.dart';
@@ -15,7 +16,7 @@ class _HomeViewState extends State<HomeView> {
 
   final List<Widget> _screens = const [
     HomeScreenContent(),
-    Center(child: Text("Heart", style: TextStyle(fontSize: 24))),
+    HeartView(),
     Center(child: Text("Profile", style: TextStyle(fontSize: 24))),
     Center(child: Text("Settings", style: TextStyle(fontSize: 24))),
   ];

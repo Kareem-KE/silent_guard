@@ -28,6 +28,12 @@ class AppTheme {
         fontWeight: FontWeight.bold,
         color: Colors.black,
       ),
+      labelLarge: TextStyle(
+        fontFamily: 'Monoton',
+        fontSize: 23,
+        fontWeight: FontWeight.w600,
+        color: Color(0xFF006a4e),
+      ),
     ),
     colorScheme: const ColorScheme(
       brightness: Brightness.light,
@@ -37,7 +43,7 @@ class AppTheme {
       onSecondary: Colors.white,
       surface: Colors.white,
       onSurface: Colors.black,
-      error: Colors.red,
+      error: Colors.redAccent,
       onError: Colors.white,
     ),
   );

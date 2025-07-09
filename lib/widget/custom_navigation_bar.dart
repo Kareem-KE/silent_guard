@@ -13,7 +13,7 @@ class CustomNavigationBar extends StatelessWidget {
   });
 
   static const Color navBarColor = Color(0xFF006a4e);
-  static const Color iconColor = Colors.black;
+  static const Color iconColor = Colors.white;
   static const Color selectedColor = Colors.white;
   static const String fontFamily = 'Agbalumo';
 
