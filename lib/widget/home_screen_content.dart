@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:silent_guard/widget/animated_logo_wave.dart';
+import 'package:silent_guard/widget/blogs_section_widget.dart';
 
 class HomeScreenContent extends StatelessWidget {
   const HomeScreenContent({super.key});
@@ -50,6 +51,23 @@ class HomeScreenContent extends StatelessWidget {
                   ],
                 ),
               ),
+            ),
+            const SizedBox(height: 8),
+            const Padding(
+              padding: EdgeInsets.only(left: 16.0, bottom: 4.0),
+              child: Text(
+                'Blogs :',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Poppins',
+                  color: Color(0xFF042D46),
+                ),
+              ),
+            ),
+            const SingleChildScrollView(
+              physics: BouncingScrollPhysics(),
+              child: BlogsSection(),
             ),
           ],
         ),

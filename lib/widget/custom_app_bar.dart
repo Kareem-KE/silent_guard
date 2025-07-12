@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:silent_guard/screen/notification_screen.dart';
 import 'package:silent_guard/screen/settings_screen.dart';
 import 'package:silent_guard/widget/animation_text_appbar.dart';
 
@@ -40,7 +41,14 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           child: Row(
             children: [
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const NotificationScreen(),
+                    ),
+                  );
+                },
                 icon: Icon(
                   Icons.notifications_on_outlined,
                   size: 30,

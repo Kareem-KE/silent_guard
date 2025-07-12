@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:silent_guard/screen/splash_screen.dart';
 import 'package:silent_guard/theme/app_theme.dart';
 
+final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
