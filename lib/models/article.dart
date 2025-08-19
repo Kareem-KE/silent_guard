@@ -16,7 +16,7 @@ class Article {
       title: json['title'],
       description: json['description'],
       videoUrl: json['video_url'],
-      link: json['link'],
+      link: json['article_url'],
     );
   }
 }
